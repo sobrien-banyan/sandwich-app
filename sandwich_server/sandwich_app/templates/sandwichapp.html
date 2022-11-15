@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Sandwich app
+    </title>
+</head>
+<body>
+    <h1>Sandwich Home</h1>
+
+    <h3>Ingredients</h3>
+    <ul>
+    {% for ingrendient in ingredients %}
+    <li>
+        <a href="/sandwich/ingredients/{{ingredient}}">{{ ingrendient }}</a>
+    </li>
+    {% endfor %}
+    </ul>
+    <p>Add text here!</p>
+</body>
+</html>
