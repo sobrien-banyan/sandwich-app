@@ -19,6 +19,10 @@
     </li>
     {% endfor %}
     </ul>
-    <p>Add text here!</p>
+    <p>Click the button if you are hungry!</p>
+
+    <form action="{% url 'sandwich_generator' %}">
+        <input type="submit" value="Make a sandwich!" />
+    </form>
 </body>
 </html>
